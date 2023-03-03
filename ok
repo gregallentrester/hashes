@@ -1,0 +1,8 @@
+#!/bin/bash -p
+
+clear
+
+mvn clean install -B -DskipTests
+rm dependency-reduced-pom.xml
+
+java -jar ./target/Pilot.jar
